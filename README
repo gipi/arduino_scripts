@@ -24,3 +24,13 @@ In order to compile a program you have to do the following
 mkdir -p ~/.vim/syntax/
 cp utility/arduino.vim ~/.vim/syntax/
 echo "autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino" >> ~/.vimrc
+
+== HANDLE SERIAL ==
+
+PySerial is a python module that can be used in order to handle serial port
+like that Arduino give to you; it is possible to call the miniterm program
+with the following
+
+    $ python -m serial.tools.miniterm /dev/ttyACM0
+
+For more information see <http://pyserial.sourceforge.net/examples.html#miniterm>.
