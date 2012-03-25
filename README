@@ -6,11 +6,17 @@ Scripts used to program Arduino without using the IDE
 
 Every Sketch needs a dedicated working directory!
 
-Copy Makefile in the working directory
+Exists only one Makefile containing the parameters for a 
+correct compilation (the TARGET is generated based on the
+sketch's containing directory).
 
 The Makefile must be modified according the Arduino's hw owned
 (See utility/boards.txt)
 
+In order to compile a program you have to do the following
+
+    $ cd myproject
+    $ make -f ../Makefile upload
 
 
 == ARDUINO SYNTAX ON VIM==
