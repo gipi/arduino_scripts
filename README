@@ -1,5 +1,8 @@
 Scripts used to program Arduino without using the IDE
 
+== DEPENDENCIES ==
+
+ # apt-get install arduino-core
 
 
 == WRITING NEW SKETCH ==
