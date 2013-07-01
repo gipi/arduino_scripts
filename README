@@ -1,8 +1,16 @@
 Scripts used to program Arduino without using the IDE
 
+== GETTING STARTED ==
+
+ $ git clone --recursive git@github.com:gipi/arduino_scripts.git
+
 == DEPENDENCIES ==
 
  # apt-get install arduino-core
+
+For more details about arduino-mk read here:
+
+ http://hardwarefun.com/tutorials/compiling-arduino-sketches-using-makefile
 
 
 == WRITING NEW SKETCH ==
@@ -37,3 +45,9 @@ with the following
     $ python -m serial.tools.miniterm /dev/ttyACM0
 
 For more information see <http://pyserial.sourceforge.net/examples.html#miniterm>.
+
+The Makefile has also a native function for this, it's possible using
+
+ $ make monitor
+
+this will open a screen session.
